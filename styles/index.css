@@ -5,12 +5,15 @@ body{
 }
 .fondolatido{
     position: absolute;
+    top: auto; 
+    bottom: auto;
+    left: 0px;
     align-items: center;
 }
 .latido{
-     
+      background-color: yellow;
     position: fixed; 
-    width: 1000px;
+    width: 100%;
     z-index: -2;
    
 }
@@ -115,7 +118,7 @@ body{
     display: none;
 }
 .end .trabajos img{
-    background-color: rgb(206, 184, 156);
+    background-color: rgb(253, 253, 253);
     width: 200px;
     height: auto;
     border-radius: 20%;
