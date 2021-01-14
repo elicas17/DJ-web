@@ -1,0 +1,245 @@
+body{
+    font-family: "Segoe UI";
+    margin-left: 250px;
+    margin-right: 250px; 
+}
+.fondolatido{
+    position: absolute;
+    align-items: center;
+}
+.latido{
+     
+    position: fixed; 
+    width: 1000px;
+    z-index: -2;
+   
+}
+/*encabezado*/
+.encabezado{
+    background-image: url("../images/fondo.jpg") ;
+    background-image: fixed;
+    background-size: cover;
+    height: 350px;
+    margin-top: 0;
+}
+.encabezado .enlaces{
+    font-size:20px;
+    
+    padding: 5px;
+    margin: 5px;
+}
+
+.encabezado .enlaces ul{
+    list-style:none; 
+    font-size:12px;
+    margin-left: auto;
+     width:350px;
+
+    
+    
+}
+.encabezado .enlaces li{
+    display: inline-block;
+     margin: 10px;
+     background-color:rgba(255, 0, 0,.3);
+     padding: 5px;
+     font-size: 20px;
+    
+}
+.encabezado .enlaces a{
+    text-decoration:none;
+    color:black
+}
+.encabezado .intro{
+    color: white;
+    border-style:solid ;
+    border-width: 5px;
+    text-align: center;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*perfuil*/
+
+.perfil{
+   
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.perfil img{
+    width: auto;
+    height: 100%;
+    margin-left: -70px;
+}
+
+
+/*cuerpo*/
+.cuerpo{
+    background-color:rgba(255, 255, 255, 0);
+    height:auto;
+   text-align: center;
+    margin:10px;
+
+}
+/*end*/
+.end{
+    color: white;
+    background-color: #292828a4;
+    height: auto;
+    margin-bottom: 0;
+    width: auto;
+    padding: 50px;
+}
+.end p{
+    text-align: center;
+    font-size: 30px;
+}
+.end .trabajos{
+    margin-right: auto;
+}
+.end .trabajos tr{
+    margin: 10px;
+}
+.end .trabajos  td{ 
+    padding: 30px;
+}
+.end .trabajos audio{
+    display: none;
+}
+.end .trabajos img{
+    background-color: rgb(206, 184, 156);
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+}
+.end .trabajos table{
+   margin-left: auto;
+   margin-right: auto;
+}
+.end .trabajos img:hover{
+      background-color:rgba(144, 62, 62, 0.979);
+    ;
+}
+.end {
+    text-align: center;
+}
+/*contactos*/
+.contacto{
+    display: absolute;
+    margin-bottom: 100px;
+}
+
+ 
+
+.contacto div{
+    display: inline-block;
+    
+}
+
+.contacto li{
+    display: inline-block;
+    margin:10px
+}
+.contacto .formulario{
+    float: left;
+     
+    font-size: 25px;
+    height: auto;
+    margin: 20px;
+    margin-right: auto;
+    padding: 20px;
+}
+.contacto .formulario input, .conin{
+    background-color:rgb(206, 184, 156);
+    color: black;
+    width: 30em;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+.contacto .formulario textarea{
+    resize: none;
+}
+.infocontac{
+    display: block;
+    padding-top: 60px;
+    background-color: red;
+    margin-top:100px;
+    width: 700px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px) {
+body { 
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+}
+@media only screen and (max-width:1200px){  
+body {
+    margin: 0;
+  }
+}
+@media only screen and (max-width:620px) and (min-width:450px)  {
+    .end .trabajos img{
+        width: 200px;
+    }
+    .encabezado .intro{
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:450px) {
+body{
+    background-color: white;
+    margin: 0;
+    margin-right: 0;
+   
+}
+.encabezado .enlaces a{
+    font-size: 15px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.encabezado .intro{
+    margin: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    font-size: 15px;
+}
+.end{
+    height:  auto;
+}
+
+.end .trabajos img{
+    width: 100px;
+}
+
+.end .trabajos table{
+   height:  auto;
+}
+.container .perfil{
+    display: none;
+}
+}

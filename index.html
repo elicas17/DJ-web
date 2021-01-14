@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="fondolatido">
+
+        <img class="latido" src="images/latido.png" alt="">
+
+    </div>
+
+    <div class="container">
+        <div class="encabezado">
+            <div class="enlaces">
+               <ul>
+                   <li><a href="#portafolio">Portafolio</a></li>
+                   <li><a href="#cuerpo">Blog</a></li>
+                   <li><a href="#end">Contacto</a></li>
+               </ul>
+
+            </div>
+            <div class="intro">
+
+                <h1 class="nombre">Elizabeth Castro</h1>
+                <p>DJ</p>
+            </div>
+        </div>
+        <div class="perfil">
+            <img  src="images/perfil.jpg"  >
+        </div>
+        <div name="cuerpo" class="cuerpo">
+            <h2 class="titulo">Mezclas propias</h2>
+            <div class="contenido">
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda repellat omnis modi, tenetur facilis nobis sed dicta. Corporis, itaque perferendis? Debitis, nesciunt ullam placeat consequuntur sapiente esse dolores labore!</p>
+            </div>
+            
+        </div>
+        <div name="portafolio" class="end">
+            <p>Portafolio</p>
+            <div class="trabajos">
+                <table>
+                    <tr>
+                        <td>
+                            <img id="img1" src="images/musica.png" alt="">
+                            <audio id="aud1" src="/audio/vaca.mp3" controls width="50" height="350">  
+                            </audio>
+                           
+                        </td>
+                        <td>
+                            <img id="img2" src="images/musica.png" alt="">
+                            <audio  id="aud2" src="/audio/gato.mp3" controls>  
+                            </audio>
+                        </td>
+                     
+                        <td>
+                            <img id="img3"  src="images/musica.png" alt="">
+                            <audio  id="aud3" src="/audio/caballo.mp3" controls width="50" height="350">  
+                            </audio>
+                        </td>
+                        <td>
+                            <img id="img4"  src="images/musica.png" alt="">
+                            <audio  id="aud4" src="/audio/leon.mp3" controls>  
+                            </audio>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>  Mezcla 1</td>
+                        <td> Mezcla 2</td>
+                        <td>  Mezcla 1</td>
+                        <td> Mezcla 2</td>
+
+                    </tr>
+                   
+
+                </table>
+               
+            </div>
+        </div>
+        <div class="contacto">
+            <div class="formulario">
+                <h2>Contactame</h2>
+                <form action=" "> 
+                    <input type="text" placeholder="Nombre">
+                    <input type="number" placeholder="Telefono">
+                    <input type="text" placeholder="Correo">
+                    <textarea class="conin"  rows="4" type="text" placeholder="Mensaje"></textarea>
+                    
+                    
+                    <button style="background-color: rgb(46, 45, 45); 
+                                    color: white;
+                                    font-size: 18px;
+                                    padding: 5px;
+                                    margin-top: 10px;
+                                    float: right;"
+                    >Enviar</button>
+                </form>
+            </div>
+            <div class="infocontac">
+                <ul>
+                    <li>654785125</li>
+                    <li>correo@correo.com</li>
+                    <li>#instagram</li>
+                </ul>
+
+            </div>
+            
+        </div>
+       
+
+    </div>
+
+    <script> 
+        function iniciar() { 
+            
+           var boton=document.getElementById('img1'); 
+           boton.addEventListener('click', presionar1, false); 
+           var boton2=document.getElementById('img2'); 
+           boton2.addEventListener('click', presionar2, false); 
+           var boton3=document.getElementById('img3'); 
+           boton3.addEventListener('click', presionar3, false); 
+           var boton4=document.getElementById('img4'); 
+           boton4.addEventListener('click', presionar4, false); 
+        } 
+        function presionar1() { 
+           var audio1=document.getElementById('aud1');
+           if(!audio1.paused && !audio1.ended)   { 
+            audio1.pause(); 
+            reproducir.value='Reproducir';   
+            } else  { 
+                audio1.play(); 
+                reproducir.value='Pausa';   
+            }   
+        } 
+        function presionar2() { 
+           var audio2=document.getElementById('aud2'); 
+           if(!audio1.paused && !audio1.ended)   { 
+            audio1.pause(); 
+            reproducir.value='Reproducir';   
+            } else  { 
+                audio1.play(); 
+                reproducir.value='Pausa';   
+            }
+        } 
+        function presionar3() { 
+           var audio3=document.getElementById('aud3'); 
+           if(!audio1.paused && !audio1.ended)   { 
+            audio1.pause(); 
+            reproducir.value='Reproducir';   
+            } else  { 
+                audio1.play(); 
+                reproducir.value='Pausa';   
+            }
+        } 
+        function presionar4() { 
+           var audio4=document.getElementById('aud4'); 
+           if(!audio1.paused && !audio1.ended)   { 
+            audio1.pause(); 
+            reproducir.value='Reproducir';   
+            } else  { 
+                audio1.play(); 
+                reproducir.value='Pausa';   
+            } 
+        } 
+        window.addEventListener('load', iniciar, false); 
+        </script>
+    
+</body>
+</html>
