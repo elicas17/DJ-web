@@ -5,15 +5,14 @@ body{
 }
 .fondolatido{
     position: absolute;
-    top: auto; 
-    bottom: auto;
+    
+    top: 75px;
     left: 0px;
-    align-items: center;
 }
 .latido{
-      background-color: yellow;
     position: fixed; 
     width: 100%;
+    height: 25%;
     z-index: -2;
    
 }
@@ -92,6 +91,11 @@ body{
     margin:10px;
 
 }
+.cuerpo .contenido{
+    
+    padding: 10px;
+    margin: 10px;
+}
 /*end*/
 .end{
     color: white;
@@ -103,7 +107,8 @@ body{
 }
 .end p{
     text-align: center;
-    font-size: 30px;
+    font-size: 30px;    
+    padding: 5px;
 }
 .end .trabajos{
     margin-right: auto;
@@ -119,7 +124,7 @@ body{
 }
 .end .trabajos img{
     background-color: rgb(253, 253, 253);
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 20%;
 }
@@ -136,8 +141,9 @@ body{
 }
 /*contactos*/
 .contacto{
-    display: absolute;
+    height: auto;
     margin-bottom: 100px;
+    padding-top: 5px;
 }
 
  
@@ -161,8 +167,8 @@ body{
     padding: 20px;
 }
 .contacto .formulario input, .conin{
-    background-color:rgb(206, 184, 156);
-    color: black;
+    background-color: #292828a4;
+    color: white;
     width: 30em;
     font-size: 20px;
     display: block;
@@ -172,16 +178,17 @@ body{
 }
 .contacto .formulario textarea{
     resize: none;
-}
+}   
 .infocontac{
-    display: block;
+    
     padding-top: 60px;
     background-color: red;
     margin-top:100px;
     width: 700px;
+    height: auto;
 }
 
-
+::placeholder { color: white; }
 
 
 
