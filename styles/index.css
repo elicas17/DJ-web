@@ -148,6 +148,7 @@ body{
     width: 100%;
     margin-bottom: 100px;
     padding-top: 5px;
+ 
 }
 
 .contacto div{
@@ -160,15 +161,17 @@ body{
     margin:10px
 }
  .formulario{
+  padding:20px;
+     width: 60%;
     font-size: 25px;
     height: auto;
-    margin-right: auto;
-    padding: 20px;
+    
+   
 }
  .formulario input, .conin{
     background-color: #292828a4;
     color: white;
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     display: block;
     padding: 10px;
@@ -178,31 +181,23 @@ body{
  .formulario textarea{
     resize: none;
 }   
-
-.formulario{
-    width: 50%;
-   
-}
+ 
 .infocontac{
-    
+     
     font-size: 20px;
     color: #292828a4;
-    width: 30%;
+    width: 30%;   
     height: auto;
-    font-weight: bold;
-    margin-right: 0;
-    text-decoration: none;
-    outline: none;
+    position: absolute;
+    margin: auto;
+    right: 0;
+
     
 }
 .infocontac li{
     display: inline-block;
-   
-  
 }
-.infocontac span{
-     padding: 2px;
-}
+
 ::placeholder { color: white; }
 
 
@@ -213,8 +208,7 @@ body{
 body { 
     margin-left: 100px;
     margin-right: 100px;
-  }
-  
+  } 
 }
  
 @media only screen and (max-width:1270px){  
@@ -228,10 +222,14 @@ body {
         width: 90%;
     }
     .infocontac{
+      
         display: block;
         width: 90%;
         background-color: red;
         padding-top: 0;
+        position: relative;
+        margin: auto;
+        right: auto;
     }
     .infocontac li{
         display: inline-block;
@@ -240,6 +238,7 @@ body {
 }
 
 /* @media only screen and (max-width:620px) and (min-width:450px)  {
+   
     .end .trabajos img{
         width: 200px;
     }
