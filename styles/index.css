@@ -237,6 +237,9 @@ body {
         width: 115px;
         height: auto;        
     }
+    .trabajos p{
+        font-size: 25px
+    }
 }
 
  @media only screen and (max-width:680px){
@@ -302,4 +305,12 @@ body {
     .fondolatido{
         display: none;
     } 
+    .trabajos p{
+        font-size: 20px
+    }
+    .trabajos  td{ 
+    padding:25px;
+    background-color: blue;
+    display: inline-block;
+}
 } 
