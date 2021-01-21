@@ -26,21 +26,12 @@ body{
     height: 350px;
     margin-top: 0;
 }
-.encabezado .enlaces{
-    font-size:20px;
-    
-    padding: 5px;
-    margin: 5px;
-}
 
 .encabezado .enlaces ul{
     list-style:none; 
-    font-size:14px;
-    margin-left: auto;
-     width:350px;
-
-    
-    
+     width:100%; 
+     margin: 0px;
+     padding: 0px;
 }
 .encabezado .enlaces li{
     display: inline-block;
@@ -89,59 +80,115 @@ body{
 .cuerpo{
     background-color:rgba(255, 255, 255, 0);
     height:auto;
-   text-align: center;
-    margin:10px;
-
+    text-align: center;
+    margin: 0px
 }
 .cuerpo .contenido{
     
     padding: 10px;
     margin: 10px;
 }
-/*end*/
-.end{
-    color: white;
+/*portafolio*/
+.portafolio{
     background-color: #292828a4;
-    height: auto;
-    margin-bottom: 0;
-    width: auto;
-    padding: 50px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
 }
-.end p{
-    text-align: center;
-    font-size: 30px;    
-    padding: 5px;
+.titulo-controles {
+    display: flex  ;
+    justify-content: space-between;
+    align-items: end;
 }
-.end .trabajos{
-    margin-right: auto;
+.titulo-controles h3 {
+    color: white;
+    font-size: 30px;
 }
-.end .trabajos tr{
-    margin: 10px;
+/* indicadore */
+.titulo-controles .indicadores button{
+    background: white;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
 }
-.end .trabajos  td{ 
-    padding: 30px;
+.titulo-controles .indicadores button:hover,
+.titulo-controles .indicadores button.activo{
+    background: red;
 }
-.end .trabajos audio{
-    display: none;
+.portafolio .principal{
+    display: flex;
+    align-items: center;
+    position: relative;
 }
-.end .trabajos img{
-    background-color: rgb(253, 253, 253);
-    width: 150px;
-    height: auto;
-    border-radius: 20%;
-   
+.portafolio .contenedor-carrusel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
-.end .trabajos table{
-   margin-left: auto;
-   margin-right: auto;
+.portafolio .contenedor-carrusel .carrusel{
+    display: flex;
+
 }
-.end .trabajos img:hover{
-      background-color:rgba(144, 62, 62, 0.979);
-    ;
+.portafolio .contenedor-carrusel .carrusel .musica{
+    min-width:20%;
+    background: #494848;
+    transition: .3s ease all ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
 }
-.end {
-    text-align: center;
+.portafolio .contenedor-carrusel .carrusel .musica:hover{
+    transform: scale(1.2);
+    transform-origin: center;
 }
+.portafolio .contenedor-carrusel .carrusel .musica img{
+    vertical-align: auto;
+    width: 125px;
+}
+
+.flecha-izquierda, .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0,0.3);
+    font-size: 40px;
+    height: 50%;
+    top:calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.flecha-izquierda:hover, .flecha-derecha:hover {
+    background: rgba(0, 0, 0,0.7);
+}
+.flecha-izquierda{
+    left: 0;;
+}
+.flecha-derecha{
+    right: 0;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*contactos*/
 .contacto{
     height: auto;
@@ -219,69 +266,176 @@ body {
 @media only screen and (max-width:1000px){  
     .formulario{
         display: block;
-        width: 90%;
+        width: 95%;
     }
     .infocontac{
-      
+      background-color: #292828a4;
         display: block;
-        width: 90%;
-        background-color: red;
+        width: 100%;
         padding-top: 0;
         position: relative;
-        margin: auto;
-        right: auto;
+        float: right;
+    }
+    .infocontac ul{
+        float: right;
+        margin-right: 10vw
     }
     .infocontac li{
         display: inline-block;
     }
-
+    .latido{ 
+        width: 100%;
+        height: 15%;  
+    }
+    .trabajos  td{ 
+        padding: 15px;
+    }
+    .trabajos img{ 
+        width: 115px;
+        height: auto;        
+    }
+    .trabajos p{
+        font-size: 25px
+    }
 }
 
-/* @media only screen and (max-width:620px) and (min-width:450px)  {
-   
-    .end .trabajos img{
-        width: 200px;
+ @media only screen and (max-width:680px){
+    body{
+        margin:0;
+        padding: 0;
     }
-    .encabezado .intro{
-        margin: 0;
-        border-left: 0;
-        border-right: 0;
+    .container{ 
+        margin: 0px;  
+        padding: 0px;
         width: 100%;
+        height: 100%;
+    }
+    .encabezado{  
+        padding: 0px;
+        margin: 0px;
+        color: black;
+        background-image:none;
+        height:250px; 
+        
+    }
+    .encabezado .enlaces{
+        font-size:15px;
+        width: 100%;
+    }
+    
+    .encabezado .enlaces li{
         font-size: 15px;
     }
-} */
-/* @media only screen and (max-width:450px) {
-body{
-    background-color: white;
-    margin: 0;
-    margin-right: 0;
-   
-}
-.encabezado .enlaces a{
-    font-size: 15px;
-    padding: 2px;
-    margin: 2px;
-}
+    .encabezado .intro{
+        /* background-color: rgb(66, 60, 60); */
+        color: white;
+        font-size: 10px;
+        width: 100%;
+        border-style:none ;
+        text-align: none;
+        margin:0;
+        padding: 3px 0px 3px 0px;
+    }
+    .trabajos img{ 
+        width: 25vw;
+        height: auto;        
+    }
+    
+    /*perfil*/
 
-.encabezado .intro{
-    margin: 0;
-    border-left: 0;
-    border-right: 0;
-    width: 100%;
-    font-size: 15px;
+        
+    .perfil{
+        position: absolute;
+        top: 0;
+        z-index: -2;
+        width: 100%;
+        height: 27%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0%;
+        
+    
+    }
+    .perfil img{
+        width: 100%;
+        min-width: 450px;
+        height: auto;
+        min-height:250px; 
+        display: flex;
+        margin: 0px;
+       
+    }
+    /* fin perfil */
+    .fondolatido{
+        display: none;
+    } 
+    .trabajos p{
+        font-size: 20px
+    }
+    .trabajos  td{ 
+    padding:25px;
+    display: inline-block;
+    } 
+    .cuerpo{
+        display: block;
+        width: 100%;
+        padding:0;
+        margin: 0;
+        margin-top: 15px;
+     }
+     .cuerpo .titulo{
+         font-size: 20px;
+         margin: 0;
+     }
+      
+     .cuerpo .contenido{
+        font-size: 15px;
+        margin: 0;
+     }
+     .formulario{
+         margin: 0px;
+         padding: 0px;
+     }
+     .encabezado .enlaces li{
+        display: inline-block;
+         margin: 5px;
+     }
+     .enlaces ul{
+         display: flex;
+     }
+     .formulario{
+         margin: 0px;
+         padding: 10px;
+     }
+     .formulario h2{
+         font-size: 20px;
+     }
+     .formulario input, .conin{
+        
+        width: 90%;
+        font-size: 15px;
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+    }
+/* portafoli */
+.portafolio .contenedor-carrusel{
+    overflow: visible;
 }
-.end{
-    height:  auto;
+.portafolio .principal .contenedor-carrusel .carrusel{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
 }
-
-.end .trabajos img{
-    width: 100px;
-}
-
-.end .trabajos table{
-   height:  auto;
-}
-.container .perfil{
+.portafolio .indicadores,
+.portafolio .flecha-derecha,
+.portafolio .flecha-izquierda{
     display: none;
 }
-} */
+ 
+
+
+
+} 
+ 
