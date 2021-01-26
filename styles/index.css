@@ -117,6 +117,9 @@ body{
 .titulo-controles .indicadores button.activo{
     background: red;
 }
+.portafolio{
+    padding: 5%;
+}
 .portafolio .principal{
     display: flex;
     align-items: center;
@@ -133,11 +136,16 @@ body{
 
 }
 .portafolio .contenedor-carrusel .carrusel .musica{
+    
     min-width:20%;
     background: #494848;
     transition: .3s ease all ;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
 }
+.portafolio .contenedor-carrusel .carrusel .musica audio{
+    display: none;
+}
+
 .portafolio .contenedor-carrusel .carrusel .musica:hover{
     transform: scale(1.2);
     transform-origin: center;
